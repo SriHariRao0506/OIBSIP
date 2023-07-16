@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* .splash{
+
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation-name: splash;
+    animation-duration: 3s;
+} */
+#splash img{
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 800px;
+    
+}
+#splash {
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    opacity: 1;
+    font-size: 60px;
+    transition: opacity 1s;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background: black;
+    text-align: center;
+    
+}
+#splash.fade {
+opacity: 0;
+}
+
+/* header */
+
+.navbar{
+    background-color: black;
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 6px;
+    
+    
+}
+.items{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    justify-content: space-around;
+    
+   
+}
+.logo{
+    border: 3px  white;
+    color: aliceblue;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 40px;
+    font-family: Arial;
+}
+.logo span{
+    color: yellow;
+}
+.items a{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+/* home */
+.Home{
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    color: aliceblue;
+    transition: 0.5s all ease;
+}
+.Home .container1 .image1 img{
+    left: 0;
+    margin-top: 150px;
+    height: 500px;
+    width: 650px;
+    transition: 0.5s all ease;
+    margin-left: 50px;
+    border-radius: 30px;
+    background: white;
+    border: 3px solid aliceblue;
+    
+   
+}
+.Home .container1 .image1 img:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 7px 15px aliceblue;
+    background: black;
+}
+.Home .container1 .text1{
+    width: 1500px;
+    height: 100px;
+
+}
+.Home .container1 .text1 p{
+    margin-left: 820px;
+    margin-top: -330px;
+    font-size: 22px;
+    line-height: 1.5;
+    
+}
+
+
+/* Info */
+
+.Info{
+    background-color: aliceblue;
+    width: 100%;
+    height: 750px;
+    color: black;
+    transition: 0.5s all ease;
+}
+.container2 .title-Info h1{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+   
+}
+.container2 .line-Info{
+    height: 10px;
+    width: 130px;
+    background: black;
+    margin-left: 700px;
+    border-radius: 50px;
+}
+.Info .container2 .image2 img{
+    
+    margin-top: 90px;
+    height: 500px;
+    width: 650px;
+    transition: 0.5s all ease;
+    margin-left: 50px;
+    border-radius: 30px;
+    float: right;
+    border: 3px solid gray;
+    background: black;
+    
+}
+.Info .container2 .image2 img:hover{
+    transform: scale(1.05);
+    box-shadow: 12px 12px 15px 7px #999;
+    background: aliceblue;
+}
+
+.Info .container2 .text2{
+    width: 815px;
+    height: 100px;
+    
+
+}
+.Info .container2 .text2 p{
+    float: left;
+    margin-left: 100px;
+    margin-top: -330px;
+    font-size: 22px;
+    line-height: 1.5;
+    
+    
+}
+
+
+
+/* reviews */
+
+
+.Reviews{
+    padding: 40px 0;
+    background: black;
+    color: black;
+    text-align: center;
+}
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.inner h1{
+    color: aliceblue;
+    font-size: 30px;
+    font-family: monospace;
+}
+.border{
+    width: 140px;
+    height: 5px;
+    background: white;
+    margin-left: 530px;
+   
+}
+ .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ .col{
+    flex: 33.33%;
+    max-width: 33%;
+    padding: 35px;
+    box-sizing: border-box;
+ }
+ .review{
+    background:orange;
+    padding: 30px;
+    border: 2px solid whitesmoke;
+    border-radius: 10%;
+    transition: 0.5s all ease;
+ }
+ .review:hover{
+    transform: scale(1.05);
+    box-shadow: 15px 10px 12px  white;
+ }
+ .review img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 70px;
+    padding: 5px;
+    background-color: white;
+ }
+ .name{
+    font-size: 20px;
+    margin: 15px 0;
+    color: black;
+ }
+ .stars{
+    color: darkgreen;
+    margin-bottom: 15px;
+    letter-spacing: 2.5px;
+ }
+
+
+
+ /* plans */
+
+.Plans{
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.Plans .heading{
+    color: black;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 100px;
+}
+.Plans .container{
+    display: flex;
+    margin-left: 300px;
+    margin-top: 100px;
+
+}
+.Plans .p1{
+    width: 250px;
+    transition: 0.5s all ease;
+    
+    
+}
+.Plans .p1:hover{
+    transform: scale(1.05);
+    box-shadow: 15px 17px 15px gray;
+
+}
+.Plans .plan1h{
+    background-color: black;
+    color:white;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Plans .p1 .line{
+    background-color:white;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+.Plans .plan1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.Plans .plan1 .cost{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.Plans .plan1 p{
+    line-height: 30px;
+}
+.Plans .plan1 button{
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+
+
+.Plans .p2{
+    width: 250px;
+    transition: 0.5s all ease;
+    padding-left: 80px;
+    
+}
+.Plans .p2:hover{
+    transform: scale(1.05);
+    box-shadow: 15px 17px 15px gray;
+
+}
+.Plans .plan2h{
+    background-color: black;
+    color:white;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Plans .p2 .line{
+    background-color:white;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+.Plans .plan2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.Plans .plan2 .cost{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.Plans .plan2 p{
+    line-height: 30px;
+}
+.Plans .plan2 button{
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+.Plans .p3{
+    width: 250px;
+    transition: 0.5s all ease;
+    padding-left: 80px;
+    
+}
+.Plans .p3:hover{
+    transform: scale(1.05);
+    box-shadow: 15px 17px 15px gray;
+}
+.Plans .plan3h{
+    background-color: black;
+    color:white;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Plans .p3 .line{
+    background-color:white;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+.Plans .plan3{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.Plans .plan3 .cost{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.Plans .plan3 p{
+    line-height: 30px;
+}
+.Plans .plan3 button{
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+/* contacts */
+
+
+.Contact{
+    background-size: 100% 100%;
+    height: 100vh;
+    background-color: black;
+}
+.Contact .title-contact{
+    text-align: center;
+    font-size: 35px;
+    align-items: center;
+    margin-top: 30px;
+    color: white ;
+
+}
+.Contact .content{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+.Contact .content .fields{
+    width: 600px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 200px;
+    
+}
+.Contact .content .fields input{
+    font-size: 20px;
+    padding: 4px;
+    background: transparent;
+    margin: 10px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+
+}
+.Contact .content .fields textarea{
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    background: transparent;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    width: 540px;
+}
+
+.Contact .content .fields button{
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s all ease;
+    margin-left: 10px;
+    margin-left: 10px;
+}
+.Contact .content .fields button:hover{
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 10px white;
+}
+.Contact .icons{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 400px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.Contact .icons span{
+    padding: 20px;
+}
+
+@keyframes splash {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
