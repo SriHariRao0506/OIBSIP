@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Temperature converter</h1>
+        <div class="temp-cont">
+            <label for="celsius">celsius</label>
+            <input onchange="computeTemp(event)" type="number" name="celsius" id="celsius" class="celsius" placeholder="enter Temp">
+        </div>
+        <div class="temp-cont">
+            <label for="fahrenheit">fahrenheit</label>
+            <input onchange="computeTemp()" type="number" name="fahrenheit" id="fahrenheit" class="fahrenheit" placeholder="enter Temp">
+        </div>
+        <div class="temp-cont">
+            <label for="kelvin">kelvin</label>
+            <input onchange="computeTemp()" type="number" name="kelvin" id="kelvin" class="kelvin" placeholder="enter Temp">
+        </div>
+    </div>
+    <script src="firs.js"></script>
+</body>
+</html>
